@@ -1,0 +1,48 @@
+/* taskStyles.css */
+
+.task-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.task-container:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02);
+}
+
+.high-priority {
+    background-color: #f28b82;
+}
+
+.medium-priority {
+    background-color: #fbbc04;
+}
+
+.low-priority {
+    background-color: #ccff90;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ae8;
+}
