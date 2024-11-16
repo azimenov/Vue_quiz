@@ -1,7 +1,6 @@
 <template>
   <transition name="task-fade" mode="out-in">
     <div :class="['task-container', task.priority + '-priority', { completed: task.completed }]">
-      <!-- Checkbox to mark as completed -->
       <input type="checkbox" :checked="task.completed" @change="toggleComplete" />
       <span @dblclick="editTitle">{{ task.title }}</span>
       <button @click="deleteTask">Delete</button>
